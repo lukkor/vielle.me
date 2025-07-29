@@ -1,0 +1,157 @@
+/* Library Page Specific Styles */
+
+/* Section Layout */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Book Layout */
+.book {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.book:last-of-type {
+    border-bottom: none;
+}
+
+.book-content {
+    flex: 1;
+}
+
+/* Book Cover */
+.book-cover {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 180px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Book Typography */
+.book h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-number {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Book Meta */
+.book-meta {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 8px 15px;
+}
+
+.book-meta-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.book-meta-value {
+    color: #666;
+}
+
+/* Currently Reading Section */
+.currently-reading .book {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.currently-reading .book-cover {
+    background-color: #f0f0f0;
+}
+
+/* Library Responsive Styles */
+@media (max-width: 768px) {
+    .book {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .book-cover {
+        width: 160px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    .book-cover img {
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        margin-bottom: 40px;
+    }
+
+    .book-cover {
+        width: 140px;
+        height: 210px;
+        margin: 0 auto;
+    }
+
+    .book h3 {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-cover {
+        width: 120px;
+        height: 180px;
+    }
+}

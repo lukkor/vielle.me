@@ -1,0 +1,110 @@
+/* Coffee Page Specific Styles */
+
+/* Recipe Layout */
+.recipe {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
+.recipe:last-of-type {
+    border-bottom: none;
+}
+
+.recipe h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipe h3 a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recipe h3 a:hover {
+    color: #666;
+}
+
+.recipe-number {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.external-link-icon {
+    font-size: 16px;
+    opacity: 0.7;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.recipe-meta {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Recipe Details */
+.recipe-details {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    gap: 40px;
+}
+
+.recipe-section {
+    flex: 1;
+}
+
+.recipe-section h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.recipe-section p,
+.recipe-section ul {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.recipe-section ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe-section li {
+    margin-bottom: 3px;
+}
+
+/* Coffee Page Responsive */
+@media (max-width: 600px) {
+    .recipe h3 {
+        font-size: 18px;
+    }
+
+    .recipe-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recipe-section {
+        flex: none;
+    }
+}
