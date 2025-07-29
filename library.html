@@ -99,7 +99,7 @@
             .book-cover img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
                 display: block;
             }
 
@@ -155,6 +155,24 @@
                 background-color: #f0f0f0;
             }
 
+            @media (max-width: 768px) {
+                .book {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                .book-cover {
+                    width: 82px;
+                    height: 240px;
+                    margin: 0 auto;
+                }
+
+                .book-cover img {
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+
             @media (max-width: 600px) {
                 body {
                     padding: 20px 15px;
@@ -169,15 +187,9 @@
                     margin-bottom: 40px;
                 }
 
-                .book {
-                    flex-direction: column;
-                    gap: 20px;
-                }
-
                 .book-cover {
-                    width: 100%;
-                    max-width: 200px;
-                    height: 300px;
+                    width: 82px;
+                    height: 210px;
                     margin: 0 auto;
                 }
 
