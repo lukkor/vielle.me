@@ -17,7 +17,7 @@
 /* Book Layout */
 .book {
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding: 20px;
     border-bottom: 1px solid #eee;
     display: flex;
     gap: 30px;
@@ -98,7 +98,6 @@
 /* Currently Reading Section */
 .currently-reading .book {
     background-color: #fafafa;
-    padding: 20px;
     border-radius: 4px;
     border: 1px solid #eee;
 }
