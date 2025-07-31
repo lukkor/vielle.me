@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookmarks - vielle.me</title>
+        <link rel="stylesheet" href="assets/styles/base.css" />
+        <link rel="stylesheet" href="assets/styles/bookmarks.css" />
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="index.html">work</a>
+            <a href="gallery.html">gallery</a>
+            <a href="coffee.html">coffee</a>
+            <a href="library.html">library</a>
+            <span class="current">bookmarks</span>
+        </nav>
+
+        <main>
+            <section class="bookmark">
+                <h3>
+                    <span class="bookmark-number">#03</span>
+                    <a
+                        href="https://doublefree.dev/go-race-mutex-blindspot/"
+                        target="_blank"
+                    >
+                        Go's race detector has a mutex blind spot
+                        <svg
+                            class="external-link-icon"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                            />
+                        </svg>
+                    </a>
+                </h3>
+                <div class="bookmark-meta">Programming, Golang</div>
+                <p class="bookmark-description">
+                    This article highlights a limitation in Go's data race
+                    detector, which can miss data races involving mutexes in
+                    certain scenarios.
+                </p>
+            </section>
+
+            <section class="bookmark">
+                <h3>
+                    <span class="bookmark-number">#02</span>
+                    <a
+                        href="https://www.ralfj.de/blog/2025/07/24/memory-safety.html"
+                        target="_blank"
+                    >
+                        There is no memory safety without thread safety
+                        <svg
+                            class="external-link-icon"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                            />
+                        </svg>
+                    </a>
+                </h3>
+                <div class="bookmark-meta">Programming, Rust</div>
+                <p class="bookmark-description">
+                    Memory safety cannot be achieved without thread safety,
+                    emphasizing that the absence of undefined behavior is
+                    crucial for true program safety.
+                </p>
+            </section>
+
+            <section class="bookmark">
+                <h3>
+                    <span class="bookmark-number">#01</span>
+                    <a
+                        href="https://go.dev/blog/generic-interfaces"
+                        target="_blank"
+                    >
+                        Generic Interfaces
+                        <svg
+                            class="external-link-icon"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                            />
+                        </svg>
+                    </a>
+                </h3>
+                <div class="bookmark-meta">Programming, Golang</div>
+                <p class="bookmark-description">
+                    How using type parameters with interfaces in Go can
+                    effectively manage constraints on generic functions and
+                    types.
+                </p>
+            </section>
+        </main>
+
+        <footer class="copyright">
+            <p>&copy; 2024 Ludovic Vielle. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+/* Bookmarks Page Specific Styles */
+
+/* Bookmark Layout */
+.bookmark {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
+.bookmark:last-of-type {
+    border-bottom: none;
+}
+
+.bookmark h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bookmark h3 a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bookmark h3 a:hover {
+    color: #666;
+}
+
+.bookmark-number {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.external-link-icon {
+    font-size: 16px;
+    opacity: 0.7;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.bookmark-meta {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.bookmark-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Bookmarks Page Responsive */
+@media (max-width: 600px) {
+    .bookmark h3 {
+        font-size: 18px;
+    }
+
+    .bookmark-description {
+        font-size: 14px;
+    }
+}
